@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css" />
+    <title>ReactA</title>
+  </head>
+  <body>
+    <h1>this portion is not affected by react</h1>
+    <div id="root"></div>
+
+    <!-- <script>
+      let heading = document.createElement("h1");
+      heading.innerHTML = "Hello World from react";
+      let root = document.getElementById("root");
+      root.append(heading);
+    </script> -->
+    <!--crossorigin --  Cross-origin resource sharing (CORS) is an extension of the same-origin policy. You need it for authorized resource sharing with external third parties. For example, you need CORS when you want to pull data from external APIs that are public or authorized -->
+    <script
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+    ></script>
+
+    <script src="./App.js"></script>
+  </body>
+</html>
